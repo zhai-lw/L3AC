@@ -1,0 +1,11 @@
+model_tag = "debug"
+sample_rate = 16000
+model_version = "v0.0"
+#model_dir = "xxx/.cache/l3ac"
+
+[weight_urls]
+encoder = "xxx"
+decoder = "xxx"
+
+[network_config]
+feature_dim = 256

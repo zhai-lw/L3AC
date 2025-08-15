@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "l3ac"
+dynamic = ["version"]
+dependencies = [
+    "torch>=2.5",
+    "local-attention==1.11.2",
+    "pydantic-settings",
+]
+requires-python = ">= 3.11"
+authors = [
+    { name = "Linwei Zhai", email = "zhai_lw@outlook.com" }
+]
+description = "L3AC: A nerual audio codec with one quantizer"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E.*"]
+keywords = ['audio codec', 'artificial intelligence', 'deep learning', 'pytorch']
+classifiers = [
+    "Development Status :: 4 - Beta",
+    'Intended Audience :: Developers',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+    'Programming Language :: Python'
+]
+
+[project.optional-dependencies]
+examples = ["librosa"]
+
+[project.urls]
+Documentation = "https://github.com/zhai-lw/L3AC#readme"
+Repository = "https://github.com/zhai-lw/L3AC.git"
+Issues = "https://github.com/zhai-lw/L3AC/issues"
+DOWNLOAD = "https://huggingface.co/zhai-lw/L3AC"
+
+[tool.hatch.version]
+path = "l3ac/__about__.py"
