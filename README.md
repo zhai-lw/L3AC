@@ -8,6 +8,9 @@ introduced in the paper titled "L3AC: Towards a Lightweight and Lossless Audio C
 [Model Weights](https://huggingface.co/zhai-lw/L3AC)
 
 
+[Training Code](https://github.com/zhai-lw/L3AC/tree/train)
+
+
 <figure class="image">
   <img src="./bubble_chart.svg" alt="Comparison of various audio codec">
   <figcaption>Comparison of various audio codec</figcaption>
